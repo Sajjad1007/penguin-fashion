@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penguin Fashion</title>
+  <link rel="shortcut icon" href="./assets/cart.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            "bebas-neue": ["Bebas Neue", "sans-serif"],
+            "roboto": ["Roboto", "serif"],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-roboto">
+  <header class="bg-[#fffbf0]">
+    <div class="py-1 lg:py-2">
+      <!------------------------------ Navbar ------------------------------>
+      <nav
+        class="navbar p-0 pl-4 pr-2 sm:pl-6 sm:pr-4 lg:px-10 xl:px-14 2xl:px-20 container mx-auto justify-between items-center">
+        <div>
+          <a class="btn btn-ghost text-xl px-0"><img src="./assets/logo.png" loading="lazy" alt="Penguin Fashion"
+              class="w-60 lg:w-64"></a>
+        </div>
+        <div class="hidden lg:flex">
+          <ul class="flex px-0 font-medium">
+            <li class="px-2 text-[#3c3c3c]"><a class="px-5 h-9 btn btn-ghost btn-sm">Home</a></li>
+            <li class="px-2 text-[#3c3c3c]"><a class="px-5 h-9 btn btn-ghost btn-sm">Products</a></li>
+            <li class="px-2 text-[#3c3c3c]"><a class="px-5 h-9 btn btn-ghost btn-sm">About Us</a></li>
+            <li class="pl-2 text-[#3c3c3c]"><a class="px-5 h-9 btn btn-ghost btn-sm">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-end lg:hidden">
+          <button class="btn btn-square btn-ghost ml-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block h-10 w-10 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+              </path>
+            </svg>
+          </button>
+          <ul tabindex="0"
+            class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-1 w-40 p-4 shadow font-medium">
+            <li><a class="text-base text-[#3c3c3c]">Home</a></li>
+            <li><a class="text-base text-[#3c3c3c]">Products</a></li>
+            <li><a class="text-base text-[#3c3c3c]">About Us</a></li>
+            <li><a class="text-base text-[#3c3c3c]">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!------------------------------ Hero Section ------------------------------>
+      <section
+        class="mt-10 lg:mt-0 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-12 lg:gap-16 pb-16 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+        <div>
+          <h1 class="text-6xl xl:text-7xl font-bebas-neue"><span class="text-[#fabe4c]">BE THE PENGUINS</span><br>
+            <span class="text-[#363958]">OF WINTER</span>
+          </h1>
+          <p class="text-base text-[#3e3e3e] my-3 max-w-lg md:max-w-xl">
+            Our premium jackets are crafted to keep you cozy and fashionable. Explore our
+            collection
+            and find your next favorite jacket today!
+          </p>
+          <button
+            class="btn border-none text-white text-base font-normal bg-gradient-to-t from-[#85a019] to-[#a4bc46] hover:opacity-80 px-8 py-4 h-14 mt-1"><img
+              src="./assets/cart.png" loading="lazy" alt="Cart" class="w-6">BUY NOW</button>
+        </div>
+        <div class="min-w-[40%]">
+          <img src="./assets/model.png" loading="lazy" alt="Model" class="mx-auto 2xl:mr-0">
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+    <!------------------------------ Women Jackets ------------------------------>
+    <section class="my-20">
+      <h2 class="font-bebas-neue text-4xl text-[#363958] text-center lg:text-left mb-6">WOMEN JACKETS</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 2xl:gap-10 max-w-96 sm:max-w-none mx-auto">
+        <div class="p-5 shadow-lg rounded-xl">
+          <div class="bg-[#f1f1f1] rounded-2xl py-6">
+            <img src="./assets/jacket-1.png" loading="lazy" alt="Jacket 1" class="w-3/4 mx-auto">
+          </div>
+          <div class="mt-6">
+            <h4 class="text-[#363958] font-bold text-2xl ">Yellow Coat Jacket</h4>
+            <p class=" text-base text-[#3e3e3e] my-2">Elegant and versatile — this jacket is
+              perfect
+              for every occasion!</p>
+          </div>
+          <div class="flex justify-between items-center mt-3">
+            <h4 class=" font-black text-4xl text-[#fabe4c]">$230</h4>
+            <button
+              class="btn border-none text-white text-sm font-normal  bg-gradient-to-t from-[#85a019] to-[#a4bc46] hover:opacity-80 px-6 py-3 h-10"><img
+                src="./assets/cart.png" loading="lazy" alt="Cart" class="w-6">BUY NOW</button>
+          </div>
+        </div>
+        <div class="p-5 shadow-lg rounded-xl">
+          <div class="bg-[#f1f1f1] rounded-2xl py-6">
+            <img src="./assets/jacket-2.png" loading="lazy" alt="Jacket 2" class="w-3/4 mx-auto">
+          </div>
+          <div class="mt-6">
+            <h4 class="text-[#363958] font-bold text-2xl ">Ladies Jacket</h4>
+            <p class=" text-base text-[#3e3e3e] my-2">Elegant and versatile — this jacket is
+              perfect
+              for every occasion!</p>
+          </div>
+          <div class="flex justify-between items-center mt-3">
+            <h4 class=" font-black text-4xl text-[#fabe4c]">$250</h4>
+            <button
+              class="btn border-none text-white text-sm font-normal  bg-gradient-to-t from-[#85a019] to-[#a4bc46] hover:opacity-80 px-6 py-3 h-10"><img
+                src="./assets/cart.png" loading="lazy" alt="Cart" class="w-6">BUY NOW</button>
+          </div>
+        </div>
+        <div class="p-5 shadow-lg rounded-xl sm:hidden lg:block">
+          <div class="bg-[#f1f1f1] rounded-2xl py-6">
+            <img src="./assets/jacket-3.png" loading="lazy" alt="Jacket 3" class="w-3/4 mx-auto">
+          </div>
+          <div class="mt-6">
+            <h4 class="text-[#363958] font-bold text-2xl ">Woman Leather Jacket</h4>
+            <p class=" text-base text-[#3e3e3e] my-2">Elegant and versatile — this jacket is
+              perfect
+              for every occasion!</p>
+          </div>
+          <div class="flex justify-between items-center mt-3">
+            <h4 class=" font-black text-4xl text-[#fabe4c]">$220</h4>
+            <button
+              class="btn border-none text-white text-sm font-normal  bg-gradient-to-t from-[#85a019] to-[#a4bc46] hover:opacity-80 px-6 py-3 h-10"><img
+                src="./assets/cart.png" loading="lazy" alt="Cart" class="w-6">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------ Men Jackets ------------------------------>
+    <section class="my-20">
+      <h2 class="font-bebas-neue text-4xl text-[#363958] text-center lg:text-left mb-6">MEN JACKETS</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 2xl:gap-10 max-w-96 sm:max-w-none mx-auto">
+        <div class="p-5 shadow-lg rounded-xl">
+          <div class="bg-[#f1f1f1] rounded-2xl py-6">
+            <img src="./assets/jacket-4.png" loading="lazy" alt="Jacket 4" class="w-3/4 mx-auto">
+          </div>
+          <div class="mt-6">
+            <h4 class="text-[#363958] font-bold text-2xl ">Snowboard Jacket</h4>
+            <p class=" text-base text-[#3e3e3e] my-2">Elegant and versatile — this jacket is
+              perfect
+              for every occasion!</p>
+          </div>
+          <div class="flex justify-between items-center mt-3">
+            <h4 class=" font-black text-4xl text-[#fabe4c]">$250</h4>
+            <button
+              class="btn border-none text-white text-sm font-normal  bg-gradient-to-t from-[#85a019] to-[#a4bc46] hover:opacity-80 px-6 py-3 h-10"><img
+                src="./assets/cart.png" loading="lazy" alt="Cart" class="w-6">BUY NOW</button>
+          </div>
+        </div>
+        <div class="p-5 shadow-lg rounded-xl">
+          <div class="bg-[#f1f1f1] rounded-2xl py-6">
+            <img src="./assets/jacket-5.png" loading="lazy" alt="Jacket 5" class="w-3/4 mx-auto">
+          </div>
+          <div class="mt-6">
+            <h4 class="text-[#363958] font-bold text-2xl ">Man Leather Jacket</h4>
+            <p class=" text-base text-[#3e3e3e] my-2">Elegant and versatile — this jacket is
+              perfect
+              for every occasion!</p>
+          </div>
+          <div class="flex justify-between items-center mt-3">
+            <h4 class=" font-black text-4xl text-[#fabe4c]">$220</h4>
+            <button
+              class="btn border-none text-white text-sm font-normal  bg-gradient-to-t from-[#85a019] to-[#a4bc46] hover:opacity-80 px-6 py-3 h-10"><img
+                src="./assets/cart.png" loading="lazy" alt="Cart" class="w-6">BUY NOW</button>
+          </div>
+        </div>
+        <div class="p-5 shadow-lg rounded-xl sm:hidden lg:block">
+          <div class="bg-[#f1f1f1] rounded-2xl py-6">
+            <img src="./assets/jacket-6.png" loading="lazy" alt="Jacket 6" class="w-3/4 mx-auto">
+          </div>
+          <div class="mt-6">
+            <h4 class="text-[#363958] font-bold text-2xl ">Man Casual Jacket</h4>
+            <p class=" text-base text-[#3e3e3e] my-2">Elegant and versatile — this jacket is
+              perfect
+              for every occasion!</p>
+          </div>
+          <div class="flex justify-between items-center mt-3">
+            <h4 class=" font-black text-4xl text-[#fabe4c]">$230</h4>
+            <button
+              class="btn border-none text-white text-sm font-normal  bg-gradient-to-t from-[#85a019] to-[#a4bc46] hover:opacity-80 px-6 py-3 h-10"><img
+                src="./assets/cart.png" loading="lazy" alt="Cart" class="w-6">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer
+    class="px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto flex flex-col lg:flex-row-reverse gap-8 xl:gap-12 pb-20 lg:items-center">
+    <div class="max-w-96 sm:max-w-[540px] xl:max-w-none mx-auto">
+      <img src="./assets/shopping.png" loading="lazy" alt="Shopping">
+    </div>
+    <div class="grid grid-cols-1 gap-4 lg:min-w-[45%] max-w-96 sm:max-w-[540px] xl:max-w-none mx-auto">
+      <div
+        class="text-center lg:text-left flex flex-col lg:flex-row gap-5 xl:gap-6 2xl:gap-8 p-7 lg:p-5 xl:pr-10 rounded-2xl shadow-lg lg:items-center">
+        <div class="min-w-20 mx-auto">
+          <img src="./assets/house.png" loading="lazy" alt="House" class="w-20">
+        </div>
+        <div>
+          <h4 class=" font-bold text-2xl text-[#363958]">Find The Perfect Fit</h4>
+          <p class=" text-base text-[#3e3e3e] mt-3 lg:mt-1">Everybody is different, that is why we
+            offer styles for every body.</p>
+        </div>
+      </div>
+      <div
+        class="text-center lg:text-left flex flex-col lg:flex-row gap-5 xl:gap-6 2xl:gap-8 p-7 lg:p-5 xl:pr-10 rounded-2xl shadow-lg lg:items-center">
+        <div class="min-w-20 mx-auto 2xl:mx-0">
+          <img src="./assets/box.png" loading="lazy" alt="Box" class="w-20">
+        </div>
+        <div>
+          <h4 class=" font-bold text-2xl text-[#363958]">Free Exchanges</h4>
+          <p class=" text-base text-[#3e3e3e] mt-3 lg:mt-1">One of the many reasons you can shop
+            with peace of mind.</p>
+        </div>
+      </div>
+      <div
+        class="text-center lg:text-left flex flex-col lg:flex-row gap-5 xl:gap-6 2xl:gap-8 p-7 lg:p-5 xl:pr-10 rounded-2xl shadow-lg lg:items-center">
+        <div class="min-w-20 mx-auto">
+          <img src="./assets/question.png" loading="lazy" alt="Question" class="w-20">
+        </div>
+        <div>
+          <h4 class=" font-bold text-2xl text-[#363958]">Contact Our Seller</h4>
+          <p class=" text-base text-[#3e3e3e] mt-3 lg:mt-1">They are here to help you. That's quite
+            literally what we pay them for.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
