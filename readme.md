@@ -4,7 +4,7 @@
 
 Welcome to **Penguin Fashion**, a modern and fully responsive landing page designed to showcase latest trends and collections of a fashion store. The project aims to provide an engaging and seamless user experience, ensuring a visually appealing layout with easy accessibility on mobile, tablet and desktop devices.
 
-### [Click here](https://penguin-fashion-sajjadur-rahman.netlify.app/) to visit the website.
+### [Click here](https://penguin-fashion-by-sajjadur-rahman.netlify.app/) to visit the website.
 
 ## Technologies Used
 
